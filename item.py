@@ -13,5 +13,5 @@ class Item:
             f"{self.description}: {self.style}: {self.size}: {self.category}: ${self.price}")
 
 
-jeans = Item("boyfriend", "jeans", 12, "bottoms", 99.99)
-jeans.show_item()
+item1 = Item("boyfriend", "jeans", 12, "bottoms", 99.99)
+item1.show_item()
