@@ -2,9 +2,9 @@ import os
 
 
 class InputOutput:
-    def __init__(self, user_input, user_output):
-        self.user_input = user_input
-        self.user_output = user_output
+    # def __init__(self, user_input, user_output):
+    #     self.user_input = user_input
+    #     self.user_output = user_output
 
     def welcome_menu():
         print("Welcome to My Wardrobe. Please select what you would like to do from the following:   ")
@@ -15,14 +15,14 @@ class InputOutput:
         print("5. Reset your wardrobe")
         print("6. Quit")
 
-    def create_item():
+    def create_item(self):
         os.system('clear')
-        title = input(f"Please enter a title for your item:  ")
-        description = input(f"Please enter the item description:  ")
-        style = input(f"Please enter the item style:  ")
-        size = (f"Please enter the item size on tag:  ")
-        category = input(f"Please enter the item category:  ")
-        price = input(f"Please enter the item price:  ")
+        title = self.user_input(f"Please enter a title for your item:  ")
+        description = self.user_input(f"Please enter the item description:  ")
+        style = self.user_input(f"Please enter the item style:  ")
+        size = self.user_input(f"Please enter the item size on tag:  ")
+        category = self.user_input(f"Please enter the item category:  ")
+        price = self.user_input(f"Please enter the item price:  ")
         return {
             "title": title,
             "description": description,
@@ -31,3 +31,8 @@ class InputOutput:
             "category": category,
             "price": price,
         }
+
+# wrapper method we are in control of user_input
+
+    def user_input(message=""):
+        return input(message)
