@@ -10,13 +10,13 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-print(bcolors.HEADER + "text" + bcolors.ENDC)
-print(bcolors.OKBLUE + "text" + bcolors.ENDC)
-print(bcolors.OKCYAN + "text" + bcolors.ENDC)
-print(bcolors.OKBLUE + "text" + bcolors.ENDC)
-print(bcolors.OKGREEN + "text" + bcolors.ENDC)
-print(bcolors.WARNING + "text" + bcolors.ENDC)
-print(bcolors.FAIL + "text" + bcolors.ENDC)
-print(bcolors.ENDC + "text" + bcolors.ENDC)
-print(bcolors.BOLD + "text" + bcolors.ENDC)
-print(bcolors.UNDERLINE + "text" + bcolors.ENDC)
+# print(bcolors.HEADER + "text" + bcolors.ENDC)
+# print(bcolors.OKBLUE + "text" + bcolors.ENDC)
+# print(bcolors.OKCYAN + "text" + bcolors.ENDC)
+# print(bcolors.OKBLUE + "text" + bcolors.ENDC)
+# print(bcolors.OKGREEN + "text" + bcolors.ENDC)
+# print(bcolors.WARNING + "text" + bcolors.ENDC)
+# print(bcolors.FAIL + "text" + bcolors.ENDC)
+# print(bcolors.ENDC + "text" + bcolors.ENDC)
+# print(bcolors.BOLD + "text" + bcolors.ENDC)
+# print(bcolors.UNDERLINE + "text" + bcolors.ENDC)
