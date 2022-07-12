@@ -20,13 +20,18 @@ class InputOutput:
 
     def create_item(self):
         os.system('clear')
-        title = self.user_input(f"Please enter a title for your item:  ")
+        title = self.user_input(
+            bcolors.OKYELLOW + f"Please enter a title for your item:  " + bcolors.ENDC)
         description = self.user_input(
-            f"Please enter the item description:  ")
-        style = self.user_input(f"Please enter the item style:  ")
-        size = self.user_input(f"Please enter the item size on tag:  ")
-        brand = self.user_input(f"Please enter the item brand:  ")
-        price = self.user_input(f"Please enter the item price:  ")
+            bcolors.OKRED + f"Please enter the item description:  " + bcolors.ENDC)
+        style = self.user_input(
+            bcolors.OKGREEN + f"Please enter the item style:  " + bcolors.ENDC)
+        size = self.user_input(
+            bcolors.OKCYAN + f"Please enter the item size on tag:  " + bcolors.ENDC)
+        brand = self.user_input(
+            bcolors.OKBLUE + f"Please enter the item brand:  " + bcolors.ENDC)
+        price = self.user_input(
+            bcolors.OKYELLOW + f"Please enter the item price:  " + bcolors.ENDC)
         # create the object for the class
         return Item(title, description, style, size, brand, price)
 
