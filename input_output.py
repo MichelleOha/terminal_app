@@ -1,15 +1,11 @@
 import os
-from item import Item
 from color import bcolors
 
 
 class InputOutput:
-    # def __init__(self, user_input, user_output):
-    #     self.user_input = user_input
-    #     self.user_output = user_output
 
     def welcome_menu(self):
-        print(bcolors.BOLD + bcolors.OKBLUE +
+        print(bcolors.OKBOLD + bcolors.OKBLUE +
               "Welcome to MY WARDROBE. \nPlease select what you would like to do from the following:   " + bcolors.ENDC)
         print(bcolors.OKGREEN +
               "1. Add a new label and item to your wardrobe" + bcolors.ENDC)
@@ -32,14 +28,20 @@ class InputOutput:
             bcolors.OKBLUE + f"Please enter the item brand:  " + bcolors.ENDC)
         price = self.user_input(
             bcolors.OKYELLOW + f"Please enter the item price:  " + bcolors.ENDC)
-        # create the object for the class
-        return Item(title, description, style, size, brand, price)
+        return {
+            "title": title,
+            "description": description,
+            "style": style,
+            "size": size,
+            "brand": brand,
+            "price": price,
+        }
 
     def display_wardrobe(self, items):
         os.system('clear')
         for item in items:
-            item.show_item()
-            # get attribute from object
+            print(f"Title: {item['title']}, Description: {item['description']}, Style: {item['style']}, Size: {item['size']}, Brand: {item['brand']}, Price: ${item['price']}\n\n")
+           # get attribute from object
 
 # wrapper method we are in control of user_input
     def user_input(self, message=""):
@@ -47,3 +49,10 @@ class InputOutput:
 
     def delete_item_question(self):
         print("Which item do you want to remove by title?:   ")
+
+    def reset_wardrobe_question(self):
+        print(bcolors.OKBOLD + bcolors.OKRED +
+              "Are you sure you want to reset your wardrobe(Y/N)?  \n" + bcolors.ENDC)
+
+    def not_reset_wardrobe(self):
+        print("Your wardrobe has not been reset.\n")
