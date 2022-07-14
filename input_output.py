@@ -1,33 +1,33 @@
 import os
-from color import bcolors
+from color import Colors
 
 
 class InputOutput:
 
     def welcome_menu(self):
-        print(bcolors.OKBOLD + bcolors.OKBLUE +
-              "Welcome to MY WARDROBE. \nPlease select what you would like to do from the following:   " + bcolors.ENDC)
-        print(bcolors.OKGREEN +
-              "1. Add a new label and item to your wardrobe" + bcolors.ENDC)
-        print(bcolors.OKCYAN + "2. Delete an item in you wardrobe" + bcolors.ENDC)
-        print(bcolors.OKGREEN + "3. View my wardrobe" + bcolors.ENDC)
-        print(bcolors.OKCYAN + "4. Reset your wardrobe" + bcolors.ENDC)
-        print(bcolors.OKGREEN + "5. Quit" + bcolors.ENDC)
+        print(Colors.BOLD + Colors.PURPLE +
+              "Welcome to MY WARDROBE. \nPlease select what you would like to do from the following:   " + Colors.END)
+        print(Colors.GREEN +
+              "1. Add a new label and item to your wardrobe" + Colors.END)
+        print(Colors.BLUE + "2. Delete an item in you wardrobe" + Colors.END)
+        print(Colors.GREEN + "3. View my wardrobe" + Colors.END)
+        print(Colors.BLUE + "4. Reset your wardrobe" + Colors.END)
+        print(Colors.GREEN + "5. Quit" + Colors.END)
 
     def create_item(self):
         os.system('clear')
         title = self.user_input(
-            bcolors.OKYELLOW + f"Please enter a title for your item:  " + bcolors.ENDC)
+            Colors.YELLOW + f"Please enter a title for your item:  " + Colors.END)
         description = self.user_input(
-            bcolors.OKRED + f"Please enter the item description:  " + bcolors.ENDC)
+            Colors.RED + f"Please enter the item description:  " + Colors.END)
         style = self.user_input(
-            bcolors.OKGREEN + f"Please enter the item style:  " + bcolors.ENDC)
+            Colors.GREEN + f"Please enter the item style:  " + Colors.END)
         size = self.user_input(
-            bcolors.OKCYAN + f"Please enter the item size on tag:  " + bcolors.ENDC)
+            Colors.BLUE + f"Please enter the item size on tag:  " + Colors.END)
         brand = self.user_input(
-            bcolors.OKBLUE + f"Please enter the item brand:  " + bcolors.ENDC)
+            Colors.PURPLE + f"Please enter the item brand:  " + Colors.END)
         price = self.user_input(
-            bcolors.OKYELLOW + f"Please enter the item price:  " + bcolors.ENDC)
+            Colors.YELLOW + f"Please enter the item price:  " + Colors.END)
         return {
             "title": title,
             "description": description,
@@ -48,11 +48,13 @@ class InputOutput:
         return input(message)
 
     def delete_item_question(self):
-        print("Which item do you want to remove by title?:   ")
+        print(Colors.BOLD + Colors.YELLOW +
+              "Which item do you want to remove by title?:   \n" + Colors.END)
 
     def reset_wardrobe_question(self):
-        print(bcolors.OKBOLD + bcolors.OKRED +
-              "Are you sure you want to reset your wardrobe(Y/N)?  \n" + bcolors.ENDC)
+        print(Colors.BOLD + Colors.RED +
+              "Are you sure you want to reset your wardrobe(Y/N)?  \n" + Colors.END)
 
     def not_reset_wardrobe(self):
-        print("Your wardrobe has not been reset.\n")
+        print(Colors.BOLD + Colors.BLUE +
+              "Your wardrobe has not been reset.\n" + Colors.END)
