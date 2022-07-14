@@ -28,8 +28,12 @@ class ReadWrite:
                 "There was an issue reading your list.json file. Please make sure it exists and is in the correct format.")
 
     def write_list_to_json(self, list):
-        with open(self.file_path, 'w') as my_file:
-            json.dump(list, my_file)
+        try:
+            with open(self.file_path, 'w') as my_file:
+                json.dump(list, my_file)
+        except:
+            raise IOError(
+                "There was an issue reading your list.json file. Please make sure it exists and is in the correct format.")
 
     def reset_json(self):
         with open(self.file_path, 'w') as my_file:
