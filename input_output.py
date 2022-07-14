@@ -2,6 +2,19 @@ import os
 from color import Colors
 
 
+# def get_a_float(prompt):
+# Repeatedly asks the user for a number until they give an input that can be converted to an integer. Returns an int.
+#price = None
+
+#result = None
+# while result is None:
+#     try:
+#         result = int(input(prompt))
+#     except ValueError:
+#         print("That wasn't a numeric value, please re-enter the price.")
+# return result
+
+
 class InputOutput:
 
     def welcome_menu(self):
@@ -26,8 +39,21 @@ class InputOutput:
             Colors.BLUE + f"Please enter the item size on tag:  " + Colors.END)
         brand = self.user_input(
             Colors.PURPLE + f"Please enter the item brand:  " + Colors.END)
+        #    while price is None:
+        #         try:
+        # while result is None:
+        #     try:
+        #         price = float(self.user_input(
+        #             Colors.YELLOW + f"Please enter the item price: $  " + Colors.END))
+        #         result = int(input())
+        #     except ValueError:
+        #         print("That wasn't a numeric value, please re-enter the price.")
+        #     return result
         price = self.user_input(
-            Colors.YELLOW + f"Please enter the item price:  " + Colors.END)
+            Colors.YELLOW + f"Please enter the item price: $  " + Colors.END)
+        # price = get_a_float
+        # except ValueError:
+        #     print("Please enter a valid numeric price.\n")
         return {
             "title": title,
             "description": description,

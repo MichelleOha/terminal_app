@@ -8,9 +8,13 @@ class ReadWrite:
         self.file_path = file_path
 
     def get_json_list(self):
-        input_file = open(self.file_path)
-        json_list = json.load(input_file)
-        return json_list
+        try:
+            input_file = open(self.file_path)
+            json_list = json.load(input_file)
+            return json_list
+        except:
+            raise IOError(
+                "There was an issue reading your list.json file. Please make sure it exists and is in the correct format.")
 
     def write_item_to_json(self, item):
         input_file = open(self.file_path)
