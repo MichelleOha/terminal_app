@@ -79,7 +79,17 @@ A diagram of the classes that will be required for the application to work. Thes
 
 - Option "4" allows the user to reset their wardrobe by deleting all existing items in the json file. They are asked if they are sure they want to reset the wardrobe. If Y, then the wardrobe is deleted. If N, the wardrobe is not cleared and remains as is. The string has been coloured in red and is bold to indicate a warning message before proceeding.
 
-# Steps on How to install MY WARDROBE
+# Testing Template
+
+On the First tab of my google excel spreadsheet I have added what feature I will be testing and allocated it with an ID:
+
+![Testing ReadWrite Class](./docs/test1.png)
+
+On the second tab of my spreadsheet I have entered the information regarding the testing performed on this feature:
+
+![Testing ReadWrite Class](./docs/test2.png)
+
+# Steps on how to install MY WARDROBE
 
 ## Install Python3
 
