@@ -100,6 +100,7 @@ You will need python version 3.10 to run this application. To see if you have th
 If you don't have this version please update it or if you need to install python3, please visit:
 
 For a Mac https://wsvincent.com/install-python/#install-python-on-macos
+
 For WSL https://wsvincent.com/install-python/#install-python-on-linux
 
 and follow the instructions to install the latest version of python3.
@@ -130,7 +131,7 @@ To run this application on your local machine:
 
 1. Clone repository
 
-Copy and past this in your terminal:
+(Copy and past the below command in your terminal)
 
 `git clone git@github.com:MichelleOha/terminal_app.git`
 
