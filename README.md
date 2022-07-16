@@ -79,11 +79,79 @@ A diagram of the classes that will be required for the application to work. Thes
 
 - Option "4" allows the user to reset their wardrobe by deleting all existing items in the json file. They are asked if they are sure they want to reset the wardrobe. If Y, then the wardrobe is deleted. If N, the wardrobe is not cleared and remains as is. The string has been coloured in red and is bold to indicate a warning message before proceeding.
 
-# How To Install MY WARDROBE
+# Steps on How to install MY WARDROBE
 
-You must include:
+## Install Python3
 
-- steps to install the application
-- any dependencies required by the application to operate
-- any system/hardware requirements
-- how to use any command line arguments made for the application
+You will need python version 3.10 to run this application. To see if you have this version run the following command in your terminal:
+
+`python3 -version`
+
+If you don't have this version please update it or if you need to install python3, please visit:
+
+For a Mac https://wsvincent.com/install-python/#install-python-on-macos
+For WSL https://wsvincent.com/install-python/#install-python-on-linux
+
+and follow the instructions to install the latest version of python3.
+
+## Install pip
+
+Copy and paste the below command to check if you have pip installed and what version of it:
+
+`pip --version`
+
+If pip is not installed, copy and paste this command:
+
+`$ python -m ensurepip --upgrade`
+
+## Install VirtualEnv
+
+To check if you have VirtualEnv, copy and paste this command:
+
+`virtualenv --version`
+
+If not, copy and paste this command:
+
+`python3 -m pip install virtualenv`
+
+## NOW Let's Install MY WARDROBE Application
+
+To run this application on your local machine:
+
+1. Clone repository
+
+Copy and past this in your terminal:
+
+`git clone git@github.com:MichelleOha/terminal_app.git`
+
+2. Change into the following directory
+
+`cd T1A3/src`
+
+3. Run the following command to open the application in your terminal:
+
+`./mywardrobe.sh`
+
+**_ENJOY!_**
+
+## Dependencies required to run MY WARDROBE:
+
+![Installed packages](./docs/pip3.jpg)
+
+# Reference list:
+
+1. bauripalash (2019). How to write a simple toy database in Python within minutes. [online] freeCodeCamp.org. Available at: https://www.freecodecamp.org/news/how-to-write-a-simple-toy-database-in-python-within-minutes-51ff49f47f1/ [Accessed 13 Jul. 2022].
+
+2. eeksforgeeks (2019). Read JSON file using Python. [online] GeeksforGeeks. Available at: https://www.geeksforgeeks.org/read-json-file-using-python/ [Accessed 11 Jul. 2022].
+
+3. Netguru S.A. (2022). Dependency Injection With Python, Make It Easy! [online] www.netguru.com. Available at: https://www.netguru.com/blog/dependency-injection-with-python-make-it-easy [Accessed 16 Jul. 2022].
+
+4. Python Software Foundation (2019). Built-in Types — Python 3.8.1rc1 documentation. [online] Python.org. Available at: https://docs.python.org/3/library/stdtypes.html [Accessed 14 Jul. 2022].
+
+5. Python Software Foundation (2022). 9. Classes — Python 3.8.4rc1 documentation. [online] docs.python.org. Available at: https://docs.python.org/3/tutorial/classes.html [Accessed 9 Jul. 2022].
+
+6. Roman Mogylatov. (2021). Dependency injection and inversion of control in Python — Dependency Injector 4.39.1 documentation. [online] python-dependency-injector.ets-labs.org. Available at: https://python-dependency-injector.ets-labs.org/introduction/di_in_python.html [Accessed 11 Jul. 2022].
+
+7. Tutorials Point (2022). Python Standard Exceptions. [online] www.tutorialspoint.com. Available at: https://www.tutorialspoint.com/python/standard_exceptions.htm [Accessed 14 Jul. 2022].
+
+8. w3schools (2022). Python Try Except. [online] www.w3schools.com. Available at: https://www.w3schools.com/python/python_try_except.asp [Accessed 14 Jul. 2022].
