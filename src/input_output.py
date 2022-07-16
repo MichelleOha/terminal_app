@@ -1,5 +1,5 @@
 import os
-from color import Colors  # add src.?
+from color import Colors
 
 
 class InputOutput:
@@ -41,9 +41,9 @@ class InputOutput:
         os.system('clear')
         for item in items:
             print(f"Title: {item['title']}, Description: {item['description']}, Style: {item['style']}, Size: {item['size']}, Brand: {item['brand']}, Price: ${item['price']}\n\n")
-           # get attribute from object
+           # This will get the attribute from the object
 
-# wrapper method we are in control of user_input
+# Wrapper method - we are in control of user_input
     def user_input(self, message=""):
         return input(message)
 

@@ -1,6 +1,6 @@
 import json
 
-# this class will read and write to a json file (store data)
+# This class will read and write to a json file (store data)s
 
 
 class ReadWrite:
