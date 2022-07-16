@@ -143,9 +143,39 @@ To run this application on your local machine:
 
 `./mywardrobe.sh`
 
-**_ENJOY!_**
+## MY WARDROBE
 
-## Dependencies required to run MY WARDROBE:
+Instructions for use:
+
+1. Please select a number from the welcome menu that coincides with the task you would like to perform:
+
+![welcome_menu](./docs/menu.png)
+
+- selecting `1` will add a new item to your wardrobe, for example:
+
+![option 1](./docs/add.png)
+
+- selecting `2` will remove an item from your wardrobe
+
+![option 2](./docs/remove.jpg)
+
+- selecting `3` displays your wardrobe
+
+![option 3](./docs/view.png)
+
+- selecting `4` will reset your wardrobe
+
+![option 4](./docs/reset.jpg)
+
+- selecting `5` will quit the application
+
+![option 5](./docs/quit.png)
+
+After each selection the `welcome menu` will display again until you select `5` to quit. When you quit this application and re-visit it again, your wardrobe list will be saved for your reference.
+
+**_HAPPY SHOPPING!_**
+
+# Dependencies required to run MY WARDROBE:
 
 ![Installed packages](./docs/pip3.jpg)
 
