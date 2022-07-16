@@ -4,7 +4,7 @@ MY WARDROBE is a terminal application that allows the user to enter in and store
 
 The user can enter new items, delete unwanted items, view their wardrobe and reset their wardrobe with this application.
 
-Sizing varies so much across different brands and international sizes are different to Australia sizes.....When I shop for clothing or footwear online, I always find I have to run to my wardrobe and find an item of clothing from that particular brand so I can then go back to my order and select the correct size. The purpose of MY WARDROBE is to store that information for me in a json file so I have reference to is there and then, saving me time looking for it in my physical wardrobe.
+Sizing varies so much across different brands. International sizes are different to Australia sizes.....When I shop for clothing or footwear online, I always find I have to run to my wardrobe and find an item of clothing from that particular brand so I can then go back to my order and select the correct size. The purpose of MY WARDROBE is to store that information for me in a json file so I have reference to is there and then, saving me time looking for it in my physical wardrobe.
 
 # Repository:
 
@@ -17,7 +17,7 @@ https://Github.com/MichelleOha/terminal_app
 A diagram of the classes that will be required for the application to work. These include:
 
 1. Main class: runs the application.
-2. InputOut class: the welcome_menu output for users selection and input. Also contains functions that define the input/output required for the app to work.
+2. InputOut class: includes the welcome_menu output for users selection and input. Also contains functions that define the input/output required for the app to work.
 3. ReadWrite class: reads and writes to the json file.
 4. Color class: used for text color in the application.
 
@@ -35,7 +35,7 @@ A diagram of the classes that will be required for the application to work. Thes
 
 ![trello checklist](./docs/trello.jpg)
 
-**Checklist:**
+**Checklist Example:**
 
 ![trello checklist](./docs/checklist.jpg)
 
@@ -47,31 +47,31 @@ A diagram of the classes that will be required for the application to work. Thes
 
 ![Welcome Menu](./docs/welcome_menu.jpg)
 
--This features allows the user to make a selection from the options displayed in the welcome menu to navigate what function they would like to perform. Strings are colored for visual appeal.
+- This features allows the user to make a selection from the options displayed in the welcome menu to navigate what function they would like to perform. Strings are colored for visual appeal.
 
 **Storing of Data**
 
 ![Json file](./docs/json.jpg)
 
--The ReadWrite class has the responsibility of the persistance of data. In other words, the user reads and writes their items in the "wardrobe" which is the json file. As soon as the application runs, it reads the list.json file and checks for any data stored in there as a list. The json file allows us to store our wardrobe items, quit the application and reopen it and the data will still exist.
+- The ReadWrite class has the responsibility of the persistance of data. In other words, the user reads and writes their items in the "wardrobe" which is the json file. As soon as the application runs, it reads the list.json file and checks for any data stored in there as a list. The json file allows us to store our wardrobe items, quit the application and reopen it and the data will still exist.
 
 **Adding items**
 
 ![Input](./docs/adding_items.jpg)
 
-- Option "1" in the welcome menu allows the user to add items to their wardrobe in this application. The user is asked six questions, one at a time so they can enter their input.
+- Option "1" in the welcome menu allows the user to add items to their wardrobe in this application. The user is asked six questions, one at a time so they can enter their input. This is then saved to their wardrobe (list.json).
 
 **Removing items**
 
 ![Remove items](./docs/remove.jpg)
 
-- Option "2" in the welcome menu allow the user to remove items from their wardrobe in this application. The user is asked which item they would like to remove by title and the application then deletes it from the wardrobe (json file).
+- Option "2" in the welcome menu allows the user to remove items from their wardrobe in this application. The user is asked which item they would like to remove by title and the application then deletes it from the wardrobe (json file).
 
 **View Wardrobe**
 
 ![View items](./docs/display.jpg)
 
--Option "3" allows the user to view there wardrobe. If there is any items in there they will be displayed. If not the welcome menu will be displayed.
+- Option "3" allows the user to view there wardrobe. If there is any items in the wardrobe, the items will be displayed. If not, the welcome menu will be displayed.
 
 **Reset Wardrobe**
 
@@ -81,7 +81,7 @@ A diagram of the classes that will be required for the application to work. Thes
 
 # Testing Template
 
-On the First tab of my google excel spreadsheet I have added what feature I will be testing and allocated it with an ID:
+On the first tab of my google excel spreadsheet I have added what feature I will be testing and allocated it with an ID:
 
 ![Testing ReadWrite Class](./docs/test1.png)
 
@@ -124,7 +124,7 @@ If not, copy and paste this command:
 
 `python3 -m pip install virtualenv`
 
-## NOW Let's Install MY WARDROBE Application
+## NOW Let's Install MY WARDROBE Application:
 
 To run this application on your local machine:
 
